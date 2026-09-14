@@ -1,20 +1,53 @@
+// class and object example 1
+
+// #include <iostream>
+// using namespace std;
+
+// class Car {
+// public:
+//     string brand;
+
+//     void display() {
+//         cout << "Car Brand: " << brand;
+//     }
+// };
+
+// int main() {
+//     Car car1;
+
+//     car1.brand = "Toyota";
+//     car1.display();
+
+//     return 0;
+// }
+
+
+
+// class and object example 2
+
 #include <iostream>
 using namespace std;
 
-class Car {
-public:
-    string brand;
+class dog {
+    public:
+        string name;
+        string breed;
+        int age;
 
-    void display() {
-        cout << "Car Brand: " << brand;
-    }
+        void display() {
+            cout << "Dog Name: " << name << endl;
+            cout << "Dog Breed: " << breed << endl;
+            cout << "Dog Age: " << age << endl;
+        }
 };
 
 int main() {
-    Car car1;
+    dog tommy;
 
-    car1.brand = "Toyota";
-    car1.display();
+    tommy.name = "Tommy";
+    tommy.breed = "pitbull";
+    tommy.age = 3;
+    tommy.display();
 
-    return 0;
+return 0;
 }
