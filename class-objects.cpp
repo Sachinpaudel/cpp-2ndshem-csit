@@ -68,4 +68,6 @@ class Employee
 int main()
 {
     Employee Harry;
+
+    return 0;
 }
