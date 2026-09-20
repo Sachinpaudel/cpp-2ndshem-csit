@@ -60,14 +60,22 @@ using namespace std;
 
 class Employee
 {
+public:
     int eID;
     string eName;
-    public:
 };
+
 
 int main()
 {
     Employee Harry;
-
+    Harry.eID = 5;
+    Harry.eName = "Harry";
+    cout << "Employee having ID " << Harry.eID << " is " << Harry.eName << endl;
+    
     return 0;
 }
+
+
+
+
