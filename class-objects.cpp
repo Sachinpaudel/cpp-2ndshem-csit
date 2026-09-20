@@ -25,29 +25,47 @@
 
 // class and object example 2
 
+// #include <iostream>
+// using namespace std;
+
+// class dog {
+//     public:
+//         string name;
+//         string breed;
+//         int age;
+
+//         void display() {
+//             cout << "Dog Name: " << name << endl;
+//             cout << "Dog Breed: " << breed << endl;
+//             cout << "Dog Age: " << age << endl;
+//         }
+// };
+
+// int main() {
+//     dog tommy;
+
+//     tommy.name = "Tommy";
+//     tommy.breed = "pitbull";
+//     tommy.age = 3;
+//     tommy.display();
+
+// return 0;
+// }
+
+
+// class and object example 3
+
 #include <iostream>
 using namespace std;
 
-class dog {
+class Employee
+{
+    int eID;
+    string eName;
     public:
-        string name;
-        string breed;
-        int age;
-
-        void display() {
-            cout << "Dog Name: " << name << endl;
-            cout << "Dog Breed: " << breed << endl;
-            cout << "Dog Age: " << age << endl;
-        }
 };
 
-int main() {
-    dog tommy;
-
-    tommy.name = "Tommy";
-    tommy.breed = "pitbull";
-    tommy.age = 3;
-    tommy.display();
-
-return 0;
+int main()
+{
+    Employee Harry;
 }
