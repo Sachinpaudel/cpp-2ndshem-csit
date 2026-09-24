@@ -55,26 +55,58 @@
 
 // class and object example 3
 
+// #include <iostream>
+// using namespace std;
+
+// class Employee
+// {
+// public:
+//     int eID;
+//     string eName;
+// };
+
+
+// int main()
+// {
+//     Employee Harry;
+//     Harry.eID = 5;
+//     Harry.eName = "Harry";
+//     cout << "Employee having ID " << Harry.eID << " is " << Harry.eName << endl;
+    
+//     return 0;
+// }
+
+
+
+
 #include <iostream>
 using namespace std;
+
 
 class Employee
 {
 public:
     int eID;
     string eName;
+ 
+    void printName();
 };
-
-
-int main()
+ 
+void Employee::printName()
 {
-    Employee Harry;
-    Harry.eID = 5;
-    Harry.eName = "Harry";
-    cout << "Employee having ID " << Harry.eID << " is " << Harry.eName << endl;
-    
+    cout << eName << endl;
+}
+
+int main(){
+
+
+    Employee sachin;
+    sachin.eName = "Sachin";
+    sachin.printName();
     return 0;
 }
+
+
 
 
 

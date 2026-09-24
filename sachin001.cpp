@@ -1,8 +1,34 @@
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+
+//     cout << "HEllo world!" << endl;
+//     return 0;
+// }
+
+
 #include <iostream>
 using namespace std;
 
-int main(){
+class Employee
+{
+public:
+    int eID;
+    string eName;
+ 
+    void printName()
+    {
+        cout << eName << endl;
+        cout << "My name is " << eName << " and my ID is " << eID << endl;
+    }
+};
 
-    cout << "HEllo world!" << endl;
+int main(){
+    Employee sachin;
+    sachin.eName = "Sachin";
+    sachin.eID = 1;
+    sachin.printName();
+
     return 0;
 }
