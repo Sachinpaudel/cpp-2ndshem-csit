@@ -1,3 +1,5 @@
+
+
 // class and object example 1
 
 // #include <iostream>
@@ -79,30 +81,61 @@
 
 
 
+// #include <iostream>
+// using namespace std;
+
+
+// class Employee
+// {
+// public:
+//     int eID;
+//     string eName;
+ 
+//     void printName();
+// };
+ 
+// void Employee::printName()
+// {
+//     cout << eName << endl;
+// }
+
+// int main(){
+
+
+//     Employee sachin;
+//     sachin.eName = "Sachin";
+//     sachin.printName();
+//     return 0;
+// }
+
+
+
+// from aapna college
+
+
 #include <iostream>
 using namespace std;
 
+class Student {
 
-class Employee
-{
-public:
-    int eID;
-    string eName;
- 
-    void printName();
+    public:
+    string name;
+    int age;
+    string course;
+
+
+    void changeName(string newName) {
+        name = newName;
+    }
 };
- 
-void Employee::printName()
-{
-    cout << eName << endl;
-}
 
-int main(){
-
-
-    Employee sachin;
-    sachin.eName = "Sachin";
-    sachin.printName();
+int main() {
+    Student sachin;
+    sachin.name = "Sachin";
+    sachin.age = 21;
+    sachin.course = "Bsc.CSIT";
+    sachin.changeName("NEW SAchin");
+    cout << "MY new name is " << sachin.name << endl;
     return 0;
 }
 
